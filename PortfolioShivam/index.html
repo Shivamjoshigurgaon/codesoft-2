@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header p {
+            margin: 10px 0 0;
+        }
+
+        section {
+            padding: 20px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        #about {
+            background-color: #fff;
+            text-align: center;
+        }
+
+        #about img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 20px auto;
+            display: block;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #about img:hover {
+            transform: scale(1.1);
+        }
+
+        #skills {
+            background-color: #f9f9f9;
+        }
+
+        #skills ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #skills li {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border-radius: 20px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        #skills li:hover {
+            background-color: #45a049;
+        }
+
+        #projects {
+            background-color: #fff;
+        }
+
+        .project {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .project img {
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .project img:hover {
+            transform: scale(1.05);
+        }
+
+        #resume {
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        #resume a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 20px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        #resume a:hover {
+            background-color: #45a049;
+        }
+
+        #contact {
+            background-color: #fff;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            #skills ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .project img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Shivam Joshi</h1>
+        <p>Web Developer & Designer</p>
+    </header>
+
+    <section id="about">
+        <img src="./image/team-3.jpg" alt="Shivam Joshi Profile Picture">
+        <p>I'm Shivam Joshi, a web developer and designer with 3 months of experience in building responsive and
+            user-friendly websites. I'm passionate about creating innovative solutions that meet the needs of my
+            clients.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>UI/UX Design</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <img src="./image/screenshot.png" alt="Project 1 Image">
+            <h3>Project 1: Website Redesign</h3>
+            <p>A responsive website redesign for a local business, built using HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="project">
+            <img src="./image/mobile.png" alt="Project 2 Image">
+            <h3>Project 2: E-commerce Website</h3>
+            <p>A fully functional e-commerce website built using React and Redux.</p>
+        </div>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <a href="./image/shivamResume.pdf" download>Download Resume (PDF)</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:shivamjoshi683@gmail.com">shivamjoshi@gmail.com</a></p>
+        <p>Phone: 9899539044</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 . All rights reserved- shivam joshi</p>
+        <a href="https://www.linkedin.com/in/shivam-joshi-1b9236220/"> Check Out! LinkedIn</a>
+    </footer>
+</body>
+
+</html>
